@@ -1,8 +1,19 @@
+import com.workintech.example.BankAccount;
+
 public class Main {
     public static void main(String[] args) {
         getFirstAndLastDigitSum(233245);
         hasSameLastDigit(12, 23, 35, 13, 16, 17);
         getLargestPrime(217);
+
+        BankAccount account1 = new BankAccount(1234353, 2000.00, "Şevval", "sevvala@gmail.com", "ab123as");
+        System.out.println(account1.getAccountBalance());
+        account1.withdraw(2500);
+        System.out.println(account1.getAccountBalance());
+        account1.deposit(2500);
+        System.out.println(account1.getAccountBalance());
+        account1.withdraw(1500);
+        System.out.println(account1.getAccountBalance());
     };
 
     /*  1-) getFirstAndLastDigitSum isminde bir method yazmanız istenmektedir. Bu metod bir adet int parametre alır.
@@ -93,11 +104,7 @@ public class Main {
         System.out.println(result);
         return result;
     }
-}
-
-
-
-/* OOP Intro
+    /* OOP Intro
 - BankAccount isminde bir sınıf oluşturunuz.
 - BankAccount sınıfının 5 tane instance variable değeri olmalı.
 - accountNumber, accountBalance, customerName, email, password(bu değişkenlerin typeları ne olmalı ?)
@@ -106,4 +113,8 @@ public class Main {
 - withdraw methodu parametre almalı ve aldığı parametre değerini accountBalance değerinden çıkarmalıdır.(accountBalance kesinlikle 0'dan küçük olamaz)
 - withdraw metoduna gelen parametre accountBalance değerinden büyükse kullanıcıya bir uyarı verilmeli(System.out mesajı)
 - deposit methodu parametre almalı ve aldığı parametre değerini accountBalance değerine eklemelidir. (edited) */
+
+}
+
+
 
