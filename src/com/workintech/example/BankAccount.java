@@ -1,5 +1,15 @@
 package com.workintech.example;
 
+/* OOP Intro
+- BankAccount isminde bir sınıf oluşturunuz.
+- BankAccount sınıfının 5 tane instance variable değeri olmalı.
+- accountNumber, accountBalance, customerName, email, password(bu değişkenlerin typeları ne olmalı ?)
+- Tüm sınıf değişkenleriniz encapsulation kuralına uygun yazılmalıdır.(Her bir değişken için getter ve setter metodlarını ekleyiniz.)
+- BankAccount sınıfı içerisinde 2 tane method tanımlamalısınız. withdraw(para çekme) ve deposit(para yatırma).
+- withdraw methodu parametre almalı ve aldığı parametre değerini accountBalance değerinden çıkarmalıdır.(accountBalance kesinlikle 0'dan küçük olamaz)
+- withdraw metoduna gelen parametre accountBalance değerinden büyükse kullanıcıya bir uyarı verilmeli(System.out mesajı)
+- deposit methodu parametre almalı ve aldığı parametre değerini accountBalance değerine eklemelidir. (edited) */
+
 public class BankAccount {
     private long accountNumber;
     private double accountBalance;
