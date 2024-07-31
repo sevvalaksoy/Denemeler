@@ -4,6 +4,8 @@ package com.workintech.example;
 public class FirstUniqCharacter {
     public static void main(String[] args) {
         firstUniqChar("loveleetcode");
+        firstUniqChar("z");
+        firstUniqChar("aabb");
     }
     public static int firstUniqChar(String s) {
         char[] characters = s.toCharArray();
@@ -36,3 +38,20 @@ public class FirstUniqCharacter {
         return -1;
     }
 }
+// THE SOLUTION I HAVE FOUND AND EXAMINED.
+/* class Solution {
+    public int firstUniqChar(String s) {
+        int[] count = new int[26];
+        for(char ch : s.toCharArray())
+        count[ch-'a']++;
+
+        int n = s.length();
+        for(int i=0; i<n; i++){
+            char ch = s.charAt(i);
+            if(count[ch - 'a'] == 1)
+            return i;
+        }
+        return -1;
+    }
+}
+*/
