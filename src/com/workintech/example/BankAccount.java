@@ -72,4 +72,7 @@ public class BankAccount {
             this.accountBalance = this.accountBalance + amount;
         }
     }
+
+    public static class IntersectionOfTwoArraysII {
+    }
 }
