@@ -12,7 +12,7 @@ Given the string s, the size of each group k and the character fill, return a st
 
 public class DivideStringIntoGroupOfSizeK {
     public static void main(String[] args) {
-        divideString("abcdefghi", 3, 'x');
+        divideString("abcdefghi", 5, 'x');
     }
     public static String[] divideString(String s, int k, char fill) {
         int num = s.length() / k;
